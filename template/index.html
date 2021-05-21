@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>COMPRESSOR</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='style/style.css') }}">
+    <style>
+    </style>
+</head>
+<body href="/" style="background: url('{{ url_for('static',filename='img/bg.jpg') }}') left center no-repeat; background-size:cover"></body>
+    <div class="complete">
+        <div  class="Title">
+            COMPROCESS
+        </div>
+
+        <div><h1 title="Main">A Place To Compress Your File/Image.</h1></div>
+
+
+        <form action="/" method="POST"enctype="multipart/form-data">
+            <div id="choose">
+                <input type="file" name="document" id="document">
+            </div>
+        <button id="button" type="submit">Upload Document</button></form>
+
+        <!-- <div class="button">
+                <li><a href="#">Upload</a></li>
+        </div> -->
+        
+        <div class="text">
+            <p>
+                Select any text or image file from your device. Wait for the compression to finish. Download compressed files or images as a .BIN file.
+            </p>
+        </div>
+            <img src="static/img/logo.png">
+        </div>
+     
+</body>
+</html>  
